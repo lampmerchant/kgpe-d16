@@ -22,9 +22,10 @@ Temperature Sensors
 Thermistors
 -----------
 
-The board has two three-pin headers, TR1 and TR2, into which thermistors provided with the board (with two-pin connectors) can be
-plugged, leaving the pin closest to the fan connectors unplugged, as shown below. Thermistors have no polarity and can be plugged in
-with either orientation.
+The board has two three-pin headers, TR1 and TR2, into which 10kΩ thermistors can be plugged, connecting to the W83795G's TR2 and
+TR3 inputs.  Two 10kΩ thermistors with leads ending in two-pin connectors are included with the boxed version of the board.  The
+two-pin connectors should be plugged into the side of the three-pin headers facing away from the nearby fan headers, as shown below.
+Thermistors have no polarity and can be plugged inwith either orientation.
 
 ```
                         |
