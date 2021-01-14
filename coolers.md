@@ -16,3 +16,7 @@ Socket G34 Coolers for the KGPE-D16
 [Noctua NH-U12DO A3]: https://noctua.at/en/products/discontinued-products/nh-u12do-a3
 [1]: https://www.newegg.com/Product/Product.aspx?Item=N82E16835114137
 [2]: https://www.newegg.com/Product/Product.aspx?Item=N82E16835114141
+
+The [SilenX EFX-08-15] makes a decent, quieter replacement for the stock 80mm fan on the [Dynatron A14].
+
+[SilenX EFX-08-15]: https://www.newegg.com/Product/Product.aspx?item=N82E16835226034
