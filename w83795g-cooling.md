@@ -60,9 +60,17 @@ Fan Tachometers
 PWM Outputs
 -----------
 
-Despite the W83795G having 8 PWM outputs, only two are connected, and they do not have a 1:1 correspondence with fan headers. The
-first PWM channel (pwm1) controls 4-pin fans, the second (pwm2) controls 3-pin fans. The board has a jumper block which allows the
-user to choose between the two for the CPU fans (both together) and the case fans (all six together).
+Despite the W83795G having 8 PWM outputs, only two are connected, and they do not have a 1:1 correspondence with fan headers.
+
+The CHAFAN_SEL1 and CPUFAN_SEL1 jumpers control the voltage that is supplied to the fan headers, with CHAFAN_SEL1 controlling the
+six chassis fans (FRNT_FAN1-5 and REAR_FAN1) and CPUFAN_SEL1 controlling the two CPU fans (CPU_FAN1 and CPU_FAN2). If one of these
+jumpers shorts the two pins on the side facing towards FRNT_FAN5 (configuring them as 3-pin fans), the fans it controls will
+receive a supply voltage modulated by the second PWM channel (pwm2); if the two pins on the opposite side are shorted (configuring 
+them as 4-pin fans), they will receive an unmodulated 12V supply instead.
+
+The first PWM channel (pwm1) controls the PWM signal on the fourth pin of all eight fan headers on the board, regardless of the
+configuration of CHAFAN_SEL1 and CPUFAN_SEL1. This means that if a 4-pin fan is plugged into a header configured as 3-pin, its
+speed will be controlled by both pwm1 and pwm2.
 
 Raptor Computing recommends [here][2] that that the CPU fans be configured as 4-pin and the case fans as 3-pin to allow independent
 control of the CPU fans and the case fans.
@@ -72,11 +80,11 @@ control of the CPU fans and the case fans.
 To do this, configure the CPUFAN_SEL1 and CHAFAN_SEL1 jumpers (which are non-obviously labelled on the board, but are adjacent to the FRNT_FAN5 connector) like so:
 
 ```
-                       |
- o [o  o]              |
-[o  o] o    FRNT_FAN5  |
-            o  o  o  o |
-                       |
+                                    |
+CHAFAN_SEL1   o [o  o]              |
+CPUFAN_SEL1  [o  o] o    FRNT_FAN5  |
+                         o  o  o  o |
+                                    |
 ```
 
 Manual Control (Linux)
