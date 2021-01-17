@@ -11,7 +11,7 @@ Temperature Sensors
 
 | Chip Input | Type             | w83795 Driver Input | Device                   | Comments                 |
 | ---------- | ---------------- | ------------------- | ------------------------ | ------------------------ |
-| TD1        | Thermal Diode    | temp1               | SR5690 (Northbridge)     | Runs VERY hot (70°Cs), this can be substantially improved (40°Cs) by ziptying a 60mm fan over it. Absolute maximum rated temperature is 95°C. [source][1] |
+| TD1        | Thermal Diode    | temp1               | SR5690 (Northbridge)     |                          |
 | TR2        | Thermistor       | temp2               | Thermistor on TR1 header |                          |
 | TR3        | Thermistor       | temp3               | Thermistor on TR2 header |                          |
 | DTS1       | Digital (SB-TSI) | temp7               | CPU 0                    | Same as k10temp-pci-00c3 |
@@ -71,21 +71,6 @@ them as 4-pin fans), they will receive an unmodulated 12V supply instead.
 The first PWM channel (pwm1) controls the PWM signal on the fourth pin of all eight fan headers on the board, regardless of the
 configuration of CHAFAN_SEL1 and CPUFAN_SEL1. This means that if a 4-pin fan is plugged into a header configured as 3-pin, its
 speed will be controlled by both pwm1 and pwm2.
-
-Raptor Computing recommends [here][2] that that the CPU fans be configured as 4-pin and the case fans as 3-pin to allow independent
-control of the CPU fans and the case fans.
-
-[2]: https://www.raptorengineering.com/coreboot/kgpe-d16-bmc-port-status.php#host-thermal-management-notes
-
-To do this, configure the CPUFAN_SEL1 and CHAFAN_SEL1 jumpers (which are non-obviously labelled on the board, but are adjacent to the FRNT_FAN5 connector) like so:
-
-```
-                                    |
-CHAFAN_SEL1   o [o  o]              |
-CPUFAN_SEL1  [o  o] o    FRNT_FAN5  |
-                         o  o  o  o |
-                                    |
-```
 
 Manual Control (Linux)
 ----------------------
