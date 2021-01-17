@@ -18,6 +18,7 @@ CHAFAN_SEL1   o [o  o]              |
 CPUFAN_SEL1  [o  o] o    FRNT_FAN5  |
                          o  o  o  o |
                                     |
+```
 
 Northbridge Cooling
 -------------------
