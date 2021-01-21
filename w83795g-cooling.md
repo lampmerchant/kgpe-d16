@@ -24,22 +24,20 @@ Thermistors
 
 The board has two three-pin headers, TR1 and TR2, into which 10kΩ thermistors can be plugged, connecting to the W83795G's TR2 and
 TR3 inputs.  Two 10kΩ thermistors with leads ending in two-pin connectors are included with the boxed version of the board.  The
-two-pin connectors should be plugged into the side of the three-pin headers facing away from the nearby fan headers, as shown below.
-Thermistors have no polarity and can be plugged in with either orientation.
+two-pin connectors can be plugged into either side of the three-pin headers.  Thermistors have no polarity and can be plugged in 
+with either orientation.
 
 ```
                         |
              FRNT_FAN3  |
              o  o  o  o |
                         |
-TR2 [o  o] o            |
-TR1 [o  o] o            |
+TR2  o  o  o            |
+TR1  o  o  o            |
              FRNT_FAN4  |
              o  o  o  o |
                         |
 ```
-
-TODO can the rightmost two pins be used instead?
 
 Fan Tachometers
 ---------------
