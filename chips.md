@@ -216,6 +216,12 @@ E5
 * NXP logo / LVC244A / DK01604 / TXD547G
   * Octal Buffer or Driver With 3-State Outputs
 
+ASMB4-iKVM module
+-----------------
+
+* Spansion logo / FL128PIF / 602QQ119 C / (C)06 SPANSION
+  * 16 MB (128 Mb) SPI flash
+
 TODO
 ----
 
