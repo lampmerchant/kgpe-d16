@@ -47,5 +47,8 @@ SMBus Connections on KGPE-D16
 * AST2050 [BMC/video] pin A12 (SDA) / B12 (SCL) - SDA7/SCL7
   * pins appear not to be used for SMBus
 
+74HC4052 [mux] S1:S0 (pin 10:pin 9) is controlled by GPIO60:GPIO59 on SP5100 [southbridge] or GPIOF5:GPIOF4 on AST2050 [BMC/video].
+TODO how does precedence work?
+
 TODO net I2CMUX_ENABLE# is driven by pin 12 on LVC14A [hex inverting schmitt trigger] ... which is driven by the input on pin 13 ...
 which is net SYS_PWRGD, but what drives it?
