@@ -127,7 +127,6 @@ E5
 |     |              |              |              |              |     |     |              |              |
 | --- | ------------ | ------------ | ------------ | ------------ | --- | --- | ------------ | ------------ |
 | GND | SB_STAT_HDD4 | SB_STAT_HDD3 | SB_STAT_HDD2 | SB_STAT_HDD1 | key | GND | SB_STAT_HDD6 | SB_STAT_HDD5 |
-| GND | SB_STAT_HDD4 | SB_STAT_HDD3 | SB_STAT_HDD2 | SB_STAT_HDD1 | key | GND | SB_STAT_HDD6 | SB_STAT_HDD5 |
 
 
 ### SJ8
