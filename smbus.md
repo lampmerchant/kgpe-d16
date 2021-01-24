@@ -48,7 +48,10 @@ SMBus Connections on KGPE-D16
   * pins appear not to be used for SMBus
 
 74HC4052 [mux] S1:S0 (pin 10:pin 9) is controlled by GPIO60:GPIO59 on SP5100 [southbridge] or GPIOF5:GPIOF4 on AST2050 [BMC/video].
-TODO how does precedence work?
+Precedence is determined by a transistor circuit controlling the output-enable pins of LVC125A [quad bus buffer gate]; if the base
+(pin 1) of QQ9 is low, the AST2050 controls the mux, if high, the SP5100 does.  TODO this is controlled by pin 3 of D27, a 3-pin
+SOT23 device printed with "43t", which connects to BMC_PRESENT# on AST2050 (pin 1) and SB_BIOS_POST_COMPLT# on ST5100 (pin 2); what
+does it do?
 
 TODO net I2CMUX_ENABLE# is driven by pin 12 on LVC14A [hex inverting schmitt trigger] ... which is driven by the input on pin 13 ...
 which is net SYS_PWRGD, but what drives it?
