@@ -4,6 +4,73 @@ All headers are mapped such that the board is face-up with the ATX panel in the 
 KGPE-D16 Headers - Not Stuffed
 ==============================
 
+
+B2-E2
+-----
+
+(from left to right)
+
+
+### P0_J3
+
+|                         |
+| ----------------------- |
+| GND                     |
+| GND                     |
+| ACE_P0_DIMM_VREF_SUS_DQ |
+| ACE_P0_DIMM_VREF_SUS_DQ |
+
+
+### P0_J2
+
+|                   |
+| ----------------- |
+| GND               |
+| GND               |
+| ACE_P0_M_VREF_SUS |
+| ACE_P0_M_VREF_SUS |
+
+
+### P0_J1
+
+|                         |
+| ----------------------- |
+| GND                     |
+| GND                     |
+| ACE_P0_DIMM_VREF_SUS_CA |
+| ACE_P0_DIMM_VREF_SUS_CA |
+
+
+### P1_J1
+
+|                         |
+| ----------------------- |
+| ACE_P1_DIMM_VREF_SUS_CA |
+| ACE_P1_DIMM_VREF_SUS_CA |
+| GND                     |
+| GND                     |
+
+
+### P1_J2
+
+|                   |
+| ----------------- |
+| ACE_P1_M_VREF_SUS |
+| ACE_P1_M_VREF_SUS |
+| GND               |
+| GND               |
+
+
+### P1_J3
+
+|                         |
+| ----------------------- |
+| ACE_P1_DIMM_VREF_SUS_DQ |
+| ACE_P1_DIMM_VREF_SUS_DQ |
+| GND                     |
+| GND                     |
+
+
 A4
 --
 
@@ -23,6 +90,17 @@ B4
 |       |            |            |     |
 | ----- | ---------- | ---------- | --- |
 | +5VSB | AST_TXD2_R | AST_RXD2_R | GND |
+
+
+### ACE_CLOCK_HEADER1
+
+|     |        |     |
+| --- | ------ | --- |
+| GND |        | GND |
+|     | CLX_X1 |     |
+| GND |        | GND |
+
+SMA connector - CLX_X1 connects to pin 24 on 932S890CKLF
 
 
 C4
