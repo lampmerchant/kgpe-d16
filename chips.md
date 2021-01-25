@@ -5,26 +5,26 @@ KGPE-D16 Chip Inventory
 | ----- | --- | ---------------------------------------------------- | --------------------------------------------- | ---------- |
 | A1    | 1   | Advanced Analog Circuits logo / 232GG / 541JE5       | RS232 drivers/receivers                       |            |
 | C1    | 1   | RT8105 / GS2LDOJ                                     | 5V/12V Synchronous Buck PWM DC-DC Controller  |            |
-| E1    | 1   | 'PEM' logo / ASP0910 / ACU49X                        | PWM something??                               |            |
+| E1    | 1   | 'PEM' logo / ASP0910 / ACU49X                        | PWM driver associated with EPU?               |            |
 | A2    | 1   | uP1612S / PG72C7                                     | 3-phase buck ????                             |            |
-| A2    | 1   | 'EPU' logo / ASP0902C / SGU297                       | PWM something??                               |            |
+| A2    | 1   | 'EPU' logo / ASP0902C / SGU297                       | Asus Energy Processing Unit (proprietary)     |            |
 | C2    | 1   | uP8801P / PGA58K                                     | voltage regulator                             |            |
-| E2    | 1   | 'EPU' logo / ASP0902C / SGU297                       | PWM something??                               |            |
+| E2    | 1   | 'EPU' logo / ASP0902C / SGU297                       | Asus Energy Processing Unit (proprietary)     |            |
 | A3    | 1   | uP1952P / PGA58X                                     |                                               |            |
-| A3    | 1   | 'PEM' logo / ASP0910 / ACU49X                        | PWM something??                               |            |
+| A3    | 1   | 'PEM' logo / ASP0910 / ACU49X                        | PWM driver associated with EPU?               |            |
 | C3    | 1   | uP8801P / PGA58K                                     | voltage regulator                             |            |
 | A4    | 2   | Intel logo / WG82574L / RC63782CU / 1518 / INTEL (C) '07 (e3) / TAIWAN | Gigabit ethernet controller |            |
 | A4-B4 | 8   | ASMT logo / ASM1440 TC / OWK418122A 1544             | mux/demux for PCIe?                           |            |
 | A4    | 2   | ATMLH550 / 5BBL B / A3K29A                           | Atmel AT25320B - 32Kb SPI EEPROM              |            |
 | A4    | 1   | Realtek logo / RTL8201N / EAF74Q6 GF07             | single-chip/port 10/100 fast ethernet PHYciever |            |
-| A4    | 1   | 9112M16L / 1547                                      | ????                                          |            |
+| A4    | 1   | 9112M16L / 1547                                      | ICS9112M-16 - Clock Driver                    |            |
 | A4    | 1   | ASPEED logo / AST2050 / GVT256.1S-8 / 1552 TAN A3 GP | VGA/BMC                                       |            |
 | B4    | 1   | TI logo / BU244 / 57K G4 / CLKR                      | SN74CB3Q3244 - 8-bit FET bus switch           |            |
 | B4    | 1   | ATMLH540 / 08CM Y / A2TFKB                           | Atmel AT24C08C - 8Kb I2C EEPROM               | 0x50-0x57  |
 | C4    | 2   | RT8105 / GS2LDOJ                                     | 5V/12V Synchronous Buck PWM DC-DC Controller  |            |
 | C4    | 1   | ICS / 932S890CKLF / R42790FY / TWN 1551              | Renesas AMD CPU Clock/Frequency Synthesizer   | 0x69       |
 | C4    | 1   | LVC125A / KA33102 / TXD15 / 41D                     | Quadruple bus buffer gate with 3-state outputs |            |
-| C4    | 1   | 2002 / 12 10 / 509                                   | ????                                          |            |
+| C4    | 1   | 2002 / 12 10 / 509                      | NXP GTL2002DP - 2-bit bidirectional low voltage translator |            |
 | D4    | 1   | NXP logo / LVC244A / DK01604 / TXD547G               | Octal Buffer or Driver With 3-State Outputs   |            |
 | D4-D5 | 2   | Winbond logo / W83601G / 25272570-ZX / 534GC         | SMBus I/O expander                            | 0x18-0x1F  |
 | D4    | 1   | Winbond logo / W83667HG-A                            | SuperIO                                       |            |
